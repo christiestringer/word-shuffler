@@ -1,16 +1,14 @@
 {
-  "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Word Scrambler",
+  "description": "Scrambles the letters on a page",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Mixes the letters in the words up.",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
 }
